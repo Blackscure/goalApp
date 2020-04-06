@@ -12,6 +12,15 @@ import { GoalService } from '../goal-service/goal.service';
 
 export class GoalComponent implements OnInit {
 
+  goals:Goal[];
+
+  constructor(goalService:GoalService) {
+    this.goals = goalService.getGoals()
+  }
+  ngOnInit(): void {
+    throw new Error("Method not implemented.");
+  }
+
   toggleDetails(index){
     this.goals[index].showDescription = !this.goals[index].showDescription;
   }
@@ -26,7 +35,7 @@ export class GoalComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  /*constructor() { }
 
   ngOnInit() {
   }
@@ -38,7 +47,7 @@ export class GoalComponent implements OnInit {
     new Goal(4,'Get Dog Food','Pupper likes expensive snacks',new Date(2019,11,18)),
     new Goal(5,'Solve math homework','Damn Math',new Date(2019,2,14)),
     new Goal(6,'Plot my world domination plan','Cause I am an evil overlord',new Date(2019,3,14)),
-  ];
+  ];*/
   
   addNewGoal(goal){
     let goalLength = this.goals.length;
