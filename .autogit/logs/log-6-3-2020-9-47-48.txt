@@ -1,0 +1,25 @@
+-------------------- Auto-Git Log --------------------
+		Mon Apr 06 2020 09:47:48 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+
+
+Created files:
+* .autogit/autogit.json
+* car/car.js
+* car/car.ts
+* car/engine.js
+* car/engine.ts
+* car/main.js
+* car/main.ts
+* car/wheels.js
+* car/wheels.ts
+
+
+Deleted files:
+
+
+Renamed files:
