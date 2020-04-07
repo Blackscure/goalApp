@@ -1,0 +1,24 @@
+-------------------- Auto-Git Log --------------------
+		Wed Apr 08 2020 00:36:20 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* .gitignore
+* package-lock.json
+* package.json
+* src/app/app.module.ts
+* src/app/goal/goal.component.html
+* src/app/goal/goal.component.ts
+* src/environments/environment.ts
+
+
+Created files:
+* .autogit/logs/log-8-3-2020-0-6-12.txt
+* src/app/quote-http/quote-request.service.spec.ts
+* src/app/quote-http/quote-request.service.ts
+
+
+Deleted files:
+
+
+Renamed files:
