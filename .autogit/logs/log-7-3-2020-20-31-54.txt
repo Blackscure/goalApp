@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Tue Apr 07 2020 20:31:54 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/goal-form/goal-form.component.ts
+* src/app/goal/goal.component.html
+* src/app/goal/goal.component.ts
+
+
+Created files:
+* .autogit/logs/log-7-3-2020-18-42-38.txt
+
+
+Deleted files:
+
+
+Renamed files:
