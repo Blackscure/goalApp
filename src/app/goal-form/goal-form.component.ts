@@ -12,9 +12,9 @@ export class GoalFormComponent implements OnInit {
   @Output() addGoal = new EventEmitter<Goal>();
 
   submitGoal(){
+    console.log('------===========>>>>>>>>', this.newGoal);
     this.addGoal.emit(this.newGoal);
       }
-
 
   constructor() { }
 

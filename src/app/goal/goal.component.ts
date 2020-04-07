@@ -13,9 +13,13 @@ import { GoalService } from '../goal-service/goal.service';
 export class GoalComponent implements OnInit {
 
   goals:Goal[];
+  goal: typeof Goal;
 
   constructor(goalService:GoalService) {
-    this.goals = goalService.getGoals()
+    this.goal = goalService.getGoals()
+  }
+  ngOnInit(): void {
+    throw new Error("Method not implemented.");
   }
 
   toggleDetails(index){
@@ -34,7 +38,7 @@ export class GoalComponent implements OnInit {
 
    
   addNewGoal(goal){
-    let goalLength = this.goals.length;
+    let goalLength = this.goal.length;
     goal.id = goalLength+1;
     goal.completeDate = new Date(goal.completeDate)
     this.goals.push(goal)
