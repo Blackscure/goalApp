@@ -23,7 +23,7 @@ export class GoalComponent implements OnInit {
   }
 
   toggleDetails(index){
-    this.goals[index].showDescription = !this.goals[index].showDescription;
+    this.goal[index].showDescription = !this.goal[index].showDescription;
   }
 
   deleteGoal(isComplete, index){
@@ -31,7 +31,7 @@ export class GoalComponent implements OnInit {
       let toDelete = confirm(`Are you sure you want to delete ${this.goals[index].name}?`)
 
       if (toDelete){
-        this.goals.splice(index,1)
+        this.goal.splice(index,1)
       }
     }
   }
