@@ -41,6 +41,6 @@ export class GoalComponent implements OnInit {
     let goalLength = this.goal.length;
     goal.id = goalLength+1;
     goal.completeDate = new Date(goal.completeDate)
-    this.goals.push(goal)
+    this.goal.push(goal)
   }
 }
