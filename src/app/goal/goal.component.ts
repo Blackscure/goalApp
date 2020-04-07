@@ -13,7 +13,7 @@ import { GoalService } from '../goal-service/goal.service';
 export class GoalComponent implements OnInit {
 
   goal:Goal[];
-  goal: typeof Goal;
+  
 
   constructor(goalService:GoalService) {
     this.goal = goalService.getGoal()

@@ -5,6 +5,7 @@ import { Goal } from '../goal';
   providedIn: 'root'
 })
 export class GoalService {
+  getGoal: any;
 
   getGoals(){
     return Goal
