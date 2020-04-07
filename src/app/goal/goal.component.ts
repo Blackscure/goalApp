@@ -12,11 +12,11 @@ import { GoalService } from '../goal-service/goal.service';
 
 export class GoalComponent implements OnInit {
 
-  goals:Goal[];
+  goal:Goal[];
   goal: typeof Goal;
 
   constructor(goalService:GoalService) {
-    this.goal = goalService.getGoals()
+    this.goal = goalService.getGoal()
   }
   ngOnInit(): void {
     throw new Error("Method not implemented.");
@@ -28,7 +28,7 @@ export class GoalComponent implements OnInit {
 
   deleteGoal(isComplete, index){
     if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.goals[index].name}?`)
+      let toDelete = confirm(`Are you sure you want to delete ${this.goal[index].name}?`)
 
       if (toDelete){
         this.goal.splice(index,1)
