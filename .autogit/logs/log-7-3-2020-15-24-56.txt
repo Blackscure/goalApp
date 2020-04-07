@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Tue Apr 07 2020 15:24:56 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* car/car.js
+* car/main.js
+* src/app/goal-service/goal.service.ts
+* src/app/goal/goal.component.ts
+
+
+Created files:
+* .autogit/logs/log-7-3-2020-14-54-35.txt
+
+
+Deleted files:
+
+
+Renamed files:
