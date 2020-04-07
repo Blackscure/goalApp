@@ -4,6 +4,8 @@ import { Goal } from '../goal';
 import { GoalService } from '../goal-service/goal.service';
 import { Quote } from '../quote-class/quote';
 import { AlertService } from '../alert-service/alert.service';
+import { QuoteRequestService } from '../quote-http/quote-request.service';
+
 
 @Component({
   selector: 'app-goal',
@@ -14,6 +16,14 @@ import { AlertService } from '../alert-service/alert.service';
 
 
 export class GoalComponent implements OnInit {
+  this.http.get<ApiResponse>("http://quotes.stormconsultancy.co.uk/random.json").subscribe(data=>{
+    // Succesful API request
+    this.quote = new Quote(data.author, data.quote)
+  },err=>{
+      this.quote = new Quote("Winston Churchill","Never never give up!")
+      console.log("An error occurred")
+  })
+  quote:Quote;
   [x: string]: any;
 
   goal:Goal[];
@@ -41,18 +51,15 @@ export class GoalComponent implements OnInit {
     }
   }
 
-  constructor(goalService:GoalService, alertService:AlertService,http:HttpClient) {
-    this.goal = goalService.getGoal()
-    this.alertService = alertService;
-  }
+  constructor(goalService:GoalService, alertService:AlertService, private quoteService:QuoteRequestService) {
+    this.goal = goalService.getGoals()
+    this.
 
-  OnInit() {
+    ngOnInit() {
 
-    interface ApiResponse{
-      author:string;
-      quote:string;
+      this.quoteService.quoteRequest()
+      this.quote = this.quoteService.quote
     }
-
     this.http.get<ApiResponse>("http://quotes.stormconsultancy.co.uk/random.json").subscribe(data=>{
       // Succesful API request
       this.quote = new Quote(data.author, data.quote)
