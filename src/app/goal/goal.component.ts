@@ -14,6 +14,9 @@ import { Router } from '@angular/router';
 })
 
 export class GoalComponent implements OnInit {
+
+
+  
     goal: Goal[] = [
       new Goal(1, 'Watch Finding Nemo; ', 'Find an online version and watch merlin find his son. ', new Date(2020, 3, 14)),
       new Goal(2, 'Buy cookies; ', 'i have to buy cookies for the parrot. ', new Date(2022, 4, 10)),
