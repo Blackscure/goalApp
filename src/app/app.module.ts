@@ -12,7 +12,7 @@ import { DateCountPipe } from './date-count.pipe';
 import { GoalFormComponent } from './goal-form/goal-form.component';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
-import { AbouComponent } from './abou/abou.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -23,7 +23,7 @@ import { AbouComponent } from './abou/abou.component';
     StrikethroughDirective,
     DateCountPipe,
     GoalFormComponent,
-    AbouComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
