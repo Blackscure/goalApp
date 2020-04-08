@@ -5,7 +5,7 @@
 
   <div class="row">
     <div class="col-md-6">
-      <div *ngFor='let goal of goals;let i = index'>
+      <div *ngFor='let goal of goal;let i = index'>
         <div>
           <h6 id={{i}} appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</h6>
           <button class="btn btn-primary" (click)='goToUrl(goal.id)'>View Details</button>
@@ -17,7 +17,7 @@
       <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form>
     </div>
   </div>
-  <p *ngIf='goals.length > 5'>You have too many goals</p>
+  <p *ngIf='goal.length > 5'>You have too many goals</p>
   <div class="row">
     <blockquote class="blockquote text-center">
       <p class="mb-0">{{quote.quote}}</p>

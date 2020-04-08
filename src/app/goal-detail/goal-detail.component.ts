@@ -11,7 +11,7 @@ import { GoalService } from '../goal-service/goal.service';
 
 export class GoalDetailComponent implements OnInit {
 
-  goal:Goal;
+  //goal:Goal;
 
   @Input() goal: Goal;
   @Output() isComplete = new EventEmitter<boolean>();

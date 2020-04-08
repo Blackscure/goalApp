@@ -35,9 +35,9 @@ export class GoalComponent implements OnInit {
     }
 
   } 
-  
-  constructor(goalService: GoalService, alertService: AlertService, private quoteService: QuoteRequestService, private router: Router) {
-  this.goal = goalService.getGoal()
+
+  constructor(goalService: GoalService,private http:HttpClient , alertService: AlertService, private quoteService: QuoteRequestService, private router: Router) {
+    this.goal = goalService.getGoals();
     this.alertService = alertService;
   } ngOnInit(): void {
     this.quoteService.quoteRequest()

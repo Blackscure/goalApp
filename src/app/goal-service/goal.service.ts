@@ -12,7 +12,11 @@ export class GoalService {
     new Goal(4, 'Get dog food; ', 'Pupper likes expensive snacks. ', new Date(2022, 6, 10)),
     new Goal(5, 'Plot my world dominationplan; ', 'Cause i want to cure the corona virus. ', new Date(2022, 7, 28))]; 
 
-  getGoal(){
+    goalService(): Goal[]{
+      throw new Error("Method not implemented.");
+      } 
+
+  getGoals(){
     return this.goal
   }
 
