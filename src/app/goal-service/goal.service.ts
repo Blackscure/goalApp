@@ -5,10 +5,17 @@ import { Goal } from '../goal';
   providedIn: 'root'
 })
 export class GoalService {
-  getGoal: any;
 
   getGoals(){
     return Goal
+  }
+
+  getGoal(id){
+    for (let goal of Goal){
+      if (goal.id == id){
+        return goal;
+      }
+    }
   }
 
   constructor() { }
