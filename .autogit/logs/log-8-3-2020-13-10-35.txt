@@ -1,0 +1,24 @@
+-------------------- Auto-Git Log --------------------
+		Wed Apr 08 2020 13:10:35 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/app-routing.module.ts
+* src/app/app.component.html
+* src/app/app.module.ts
+* src/app/goal/goal.component.html
+* src/app/navbar/navbar.component.html
+
+
+Created files:
+* .autogit/logs/log-8-3-2020-12-40-29.txt
+* src/app/not-found/not-found.component.css
+* src/app/not-found/not-found.component.html
+* src/app/not-found/not-found.component.spec.ts
+* src/app/not-found/not-found.component.ts
+
+
+Deleted files:
+
+
+Renamed files:
