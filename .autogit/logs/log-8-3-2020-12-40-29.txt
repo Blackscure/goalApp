@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Wed Apr 08 2020 12:40:29 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.module.ts
+
+
+Created files:
+* .autogit/logs/log-8-3-2020-12-10-5.txt
+* src/app/navbar/navbar.component.css
+* src/app/navbar/navbar.component.html
+* src/app/navbar/navbar.component.spec.ts
+* src/app/navbar/navbar.component.ts
+
+
+Deleted files:
+
+
+Renamed files:
